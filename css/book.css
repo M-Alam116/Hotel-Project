@@ -1,0 +1,142 @@
+/* reset */
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+html {
+    font-size: 100%;
+    background-color: rgb(228, 225, 225);
+    scroll-behavior: smooth;
+}
+
+/* Navigation bar */
+#navbar {
+    position: sticky;
+    top: 0%;
+    display: grid;
+    grid-template-columns: repeat(7, 12vw);
+    padding: 1.5rem 0rem;
+    text-align: center;
+    background-color: rgb(77, 74, 74);
+}
+
+#navbar div {
+    margin-top: 0.9rem;
+}
+
+#navbar a{
+    color: white;
+    text-decoration:none;
+}
+
+#navbar button {
+    padding: 0.8rem 1.5rem;
+    border: 0.1rem solid white;
+    background-color: rgb(77, 74, 74);
+    color: white;
+    cursor: pointer;
+}
+#navbar button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Book-section */
+#book-section h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 3rem 0rem;
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.rooms {
+    display: flex;
+    background-color: white;
+    margin: 2rem auto;
+    width: 70%;
+}
+
+.detail {
+    padding-left: 2rem;
+    line-height: 1.5rem;
+}
+
+.detail h2 {
+    padding: 1rem 0rem;
+}
+
+.detail p, ul {
+    font-size: 1.2rem;
+}
+
+.price {
+    margin: auto;
+}
+
+.price h3 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.price h4 {
+   font-size: 1.5rem;
+   padding: 0.5rem 0rem;
+   text-align: center;
+}
+
+.price button {
+    padding: 0.5rem 1.3rem;
+}
+
+.price button:hover {
+    color: white;
+    background-color:  rgb(53, 52, 52);
+    cursor: pointer;
+}
+
+/* transitions */
+.trans {
+    position: relative;
+    overflow: hidden ;
+}
+
+.effect {
+    width: 25%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 100%;
+    padding: 1.3rem;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+.effect h2 {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.effect p {
+    text-align: center;
+}
+
+.trans:hover .effect {
+    left: 0;
+}
+
+/* footer */
+footer {
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem 0rem;
+}

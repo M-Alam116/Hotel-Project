@@ -1,0 +1,353 @@
+/* reset */
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+html {
+    font-size: 100%;
+    background-color: rgb(228, 225, 225);
+    scroll-behavior: smooth;
+}
+
+/* Navigation bar */
+#navbar {
+    position: sticky;
+    top: 0%;
+    display: grid;
+    grid-template-columns: repeat(7, 12vw);
+    padding: 1.5rem 0rem;
+    text-align: center;
+    background-color: rgb(77, 74, 74);
+}
+
+#navbar div {
+    margin-top: 0.9rem;
+}
+
+#navbar div:hover {
+    background-color: white;
+    color: black;
+    border-radius: 3rem;
+    padding: 0.7rem 0rem;
+}
+
+#navbar a{
+    color: white;
+    text-decoration:none;
+}
+
+#navbar button {
+    padding: 0.8rem 1.5rem;
+    border: 0.1rem solid white;
+    background-color: rgb(77, 74, 74);
+    color: white;
+    cursor: pointer;
+}
+#navbar button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* home-section */
+
+#home img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 100%;
+}
+
+#home h1 {
+    font-family: fangsong;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 3.5rem;
+}
+
+#home h2 {
+    font-family: emoji;
+    font-size: 2.2rem;
+    letter-spacing: 0.6rem;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* about-section */
+#about {
+    background: url(../images/bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 30rem;
+    margin: 7rem auto;
+    padding-top: 6rem;
+}
+
+#about div {
+    background-color: white;
+    width: 45%;
+    height: 25rem;
+    margin: auto;
+}
+
+#about h1 {
+    color: black;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+#about p {
+    color: black;
+    font-size: 1.3rem;
+    text-align: justify;
+    padding: 0rem 2.5rem;
+}
+
+/* room-section */
+#room-section {
+    background: url(../images/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 40rem;
+    margin: 0rem auto;
+    padding-top: 10.5rem;
+}
+
+#room {
+    width: 40%;
+    height: 30rem;
+    background-color: white;
+    margin: auto;
+}
+
+#room h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+#room p {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    text-align: center;
+    padding: 0rem 4rem;
+}
+
+#book {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+}
+
+#book button {
+    padding: 0.8rem 1.8rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#room button:hover {
+    color: white;
+    background-color: rgb(53, 52, 52);
+}
+
+/* services-section */
+
+#services-section {
+    width: 72%;
+    margin: auto;
+    background-color: white;
+}
+
+#services-section h1 {
+    margin-top: 10rem;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+#services-section h3 {
+    letter-spacing: 0.3rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inner-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#service img {
+    width: 30%;
+    height: 40%;
+    transition-property: width, height;
+    transition-duration: 1s, 1s;
+}
+
+#service img:hover {
+    width: 40%;
+    height: 50%;
+}
+
+/* Gallery-section */
+
+#gallery {
+    width: 72%;
+    margin: auto;
+    background-color: white;
+}
+
+#gallery h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 10rem;
+    padding-top: 3rem;
+}
+
+#album {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.box {
+    width: 15rem;
+    position:relative;
+    margin: auto;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+.adjust img{
+    height: 20rem;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    height: 100%;
+    padding: 1.3rem;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+.content h2 {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.content p{
+    text-align: center;
+}
+
+.box:hover .content {
+    left: 0;
+}
+/* contact-section */
+#contact {
+ background-color: rgb(95, 194, 194);
+}
+
+#contact h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 10rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form label {
+    font-size: 1.4rem;
+    padding: 0.7rem 1rem;
+}
+
+#contact-form input{
+    width: 35%;
+    padding: 0.7rem 1rem;
+    font-size: 1.2rem ;
+}
+
+#contact-form textarea {
+    width: 35%;
+    height: 15rem;
+    padding: 0rem 1rem;
+    font-size: 1.2rem;
+}
+
+#contact-form button {
+    font-size: 1.3rem;
+    padding: 0.6rem 1.7rem;
+    margin: 1rem;
+    border: 0.1rem solid rgb(12, 201, 248);
+}
+
+#contact-form button:hover {
+    color: white;
+    background-color: rgb(53, 52, 52);
+}
+
+#logo {
+    background-color: white;
+    padding: 1.5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    width: 3%;
+    height: 3%;
+    padding: 0rem 1rem;
+    cursor: pointer;
+    transition-property: width, height;
+    transition-duration: 1s, 1s;
+}
+
+#logo img:hover {
+    width: 4%;
+    height: 4%;
+}
+
+/* footer */
+footer {
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem 0rem;
+}
